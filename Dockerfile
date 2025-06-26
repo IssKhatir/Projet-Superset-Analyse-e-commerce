@@ -1,6 +1,9 @@
 FROM apache/superset:latest
 
-COPY dashboard_export/ /app/dashboard_export/
+COPY dashboards/ /app/dashboards/
+COPY charts/ /app/charts/
+COPY datasets/ /app/datasets/
+COPY databases/ /app/databases/
 
-CMD ["/bin/bash", "-c", "superset db upgrade && superset init && superset import-dashboards --path /app/dashboard_export && superset run -h 0.0.0.0 -p 8088"]
+CMD ["/bin/bash", "-c", "superset db upgrade && superset init && superset import-dashboards --path /app && superset run -h 0.0.0.0 -p 8088"]
 
