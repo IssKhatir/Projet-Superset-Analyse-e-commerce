@@ -1,1 +1,13 @@
-
+services:
+  - type: web
+    name: superset-dashboard
+    env: docker
+    repo: https://github.com/IssKhatir/Projet-Superset-Analyse-e-commerce
+    branch: main
+    plan: free
+    dockerContext: .
+    dockerfilePath: Dockerfile
+    autoDeploy: true
+    envVars:
+      - key: SUPERSET_ENV
+        value: production
