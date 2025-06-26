@@ -6,8 +6,8 @@ services:
     branch: main
     plan: free
     dockerContext: .
-    dockerfilePath: Dockerfile
     autoDeploy: true
     envVars:
       - key: SUPERSET_ENV
         value: production
+
