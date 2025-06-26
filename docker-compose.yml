@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  superset:
+    image: apache/superset:latest
+    container_name: superset_app
+    ports:
+      - "8088:8088"
+    volumes:
+      - ./Users/isslamkhatir/Desktop/Projets superset/dashboard_export:/app/dashboard_export
+    environment:
+      - SUPERSET_ENV=production
+    command: >
+      /bin/bash -c "
+      superset db upgrade &&
+      superset init &&
+      superset import-dashboards --path /app/dashboard_export&&
+      superset run -p 8088 --with-threads --reload --debugger"
+
