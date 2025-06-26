@@ -1,0 +1,50 @@
+slice_name: Average Order
+description: null
+certified_by: null
+certification_details: null
+viz_type: big_number_total
+params:
+  datasource: 27__table
+  viz_type: big_number_total
+  slice_id: 129
+  metric:
+    aggregate: null
+    column: null
+    datasourceWarning: false
+    expressionType: SQL
+    hasCustomLabel: false
+    label: 'SUM("TotalPrice") / COUNT(DISTINCT "Invoice")
+
+      '
+    optionName: metric_d6sczwz1saj_yot63loj9g8
+    sqlExpression: 'SUM("TotalPrice") / COUNT(DISTINCT "Invoice")
+
+      '
+  adhoc_filters:
+  - clause: WHERE
+    comparator: No filter
+    expressionType: SIMPLE
+    operator: TEMPORAL_RANGE
+    subject: InvoiceDate
+  header_font_size: 0.4
+  subtitle: Average Order
+  subtitle_font_size: 0.15
+  metric_name_font_size: 0.15
+  y_axis_format: SMART_NUMBER
+  time_format: smart_date
+  conditional_formatting: []
+  extra_form_data: {}
+  dashboards:
+  - 14
+query_context: '{"datasource":{"id":27,"type":"table"},"force":false,"queries":[{"filters":[{"col":"InvoiceDate","op":"TEMPORAL_RANGE","val":"No
+  filter"}],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[],"metrics":[{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"SUM(\"TotalPrice\")
+  / COUNT(DISTINCT \"Invoice\")\n","optionName":"metric_d6sczwz1saj_yot63loj9g8","sqlExpression":"SUM(\"TotalPrice\")
+  / COUNT(DISTINCT \"Invoice\")\n"}],"annotation_layers":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{}}],"form_data":{"datasource":"27__table","viz_type":"big_number_total","slice_id":129,"metric":{"aggregate":null,"column":null,"datasourceWarning":false,"expressionType":"SQL","hasCustomLabel":false,"label":"SUM(\"TotalPrice\")
+  / COUNT(DISTINCT \"Invoice\")\n","optionName":"metric_d6sczwz1saj_yot63loj9g8","sqlExpression":"SUM(\"TotalPrice\")
+  / COUNT(DISTINCT \"Invoice\")\n"},"adhoc_filters":[{"clause":"WHERE","comparator":"No
+  filter","expressionType":"SIMPLE","operator":"TEMPORAL_RANGE","subject":"InvoiceDate"}],"header_font_size":0.4,"subtitle":"Average
+  Order","subtitle_font_size":0.15,"metric_name_font_size":0.15,"y_axis_format":"SMART_NUMBER","time_format":"smart_date","conditional_formatting":[],"extra_form_data":{},"dashboards":[14],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 2ef8db9f-7fd7-4827-82d7-e5d7e15a929f
+version: 1.0.0
+dataset_uuid: dc522637-e365-4fd8-b259-4ee432ee1848

@@ -1,0 +1,89 @@
+slice_name: "\U0001F3AF Distribution of RFM segments"
+description: null
+certified_by: null
+certification_details: null
+viz_type: echarts_timeseries_bar
+params:
+  datasource: 29__table
+  viz_type: echarts_timeseries_bar
+  slice_id: 132
+  x_axis: Segment
+  xAxisForceCategorical: true
+  x_axis_sort: Segment
+  x_axis_sort_asc: true
+  metrics:
+  - aggregate: COUNT
+    column:
+      advanced_data_type: null
+      certification_details: null
+      certified_by: null
+      column_name: Customer ID
+      description: null
+      expression: null
+      filterable: true
+      groupby: true
+      id: 804
+      is_certified: false
+      is_dttm: false
+      python_date_format: null
+      type: DOUBLE PRECISION
+      type_generic: 0
+      uuid: 969da76c-874f-480d-98bf-2255eef21349
+      verbose_name: null
+      warning_markdown: null
+    datasourceWarning: false
+    expressionType: SIMPLE
+    hasCustomLabel: false
+    label: COUNT(Customer ID)
+    optionName: metric_3i3d54pnpm2_ydjtrneify
+    sqlExpression: null
+  groupby: []
+  adhoc_filters: []
+  order_desc: true
+  row_limit: 10000
+  truncate_metric: true
+  show_empty_columns: true
+  comparison_type: values
+  annotation_layers: []
+  forecastPeriods: 10
+  forecastInterval: 0.8
+  orientation: vertical
+  x_axis_title: Segment
+  x_axis_title_margin: 30
+  y_axis_title: Customer ID
+  y_axis_title_margin: 50
+  y_axis_title_position: Left
+  sort_series_type: sum
+  color_scheme: blueToGreen
+  show_legend: true
+  legendType: scroll
+  legendOrientation: top
+  x_axis_time_format: smart_date
+  xAxisLabelInterval: auto
+  y_axis_format: SMART_NUMBER
+  y_axis_bounds:
+  - null
+  - null
+  truncateXAxis: true
+  rich_tooltip: true
+  showTooltipTotal: true
+  tooltipTimeFormat: smart_date
+  extra_form_data: {}
+  dashboards:
+  - 14
+query_context: '{"datasource":{"id":29,"type":"table"},"force":false,"queries":[{"filters":[],"extras":{"having":"","where":""},"applied_time_extras":{},"columns":[{"columnType":"BASE_AXIS","sqlExpression":"Segment","label":"Segment","expressionType":"SQL"}],"metrics":[{"aggregate":"COUNT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"Customer
+  ID","description":null,"expression":null,"filterable":true,"groupby":true,"id":804,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DOUBLE
+  PRECISION","type_generic":0,"uuid":"969da76c-874f-480d-98bf-2255eef21349","verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT(Customer
+  ID)","optionName":"metric_3i3d54pnpm2_ydjtrneify","sqlExpression":null}],"orderby":[[{"aggregate":"COUNT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"Customer
+  ID","description":null,"expression":null,"filterable":true,"groupby":true,"id":804,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DOUBLE
+  PRECISION","type_generic":0,"uuid":"969da76c-874f-480d-98bf-2255eef21349","verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT(Customer
+  ID)","optionName":"metric_3i3d54pnpm2_ydjtrneify","sqlExpression":null},false]],"annotation_layers":[],"row_limit":10000,"series_columns":[],"series_limit":0,"order_desc":true,"url_params":{},"custom_params":{},"custom_form_data":{},"time_offsets":[],"post_processing":[{"operation":"pivot","options":{"index":["Segment"],"columns":[],"aggregates":{"COUNT(Customer
+  ID)":{"operator":"mean"}},"drop_missing_columns":false}},{"operation":"sort","options":{"is_sort_index":true,"ascending":true}},{"operation":"flatten"}]}],"form_data":{"datasource":"29__table","viz_type":"echarts_timeseries_bar","slice_id":132,"x_axis":"Segment","xAxisForceCategorical":true,"x_axis_sort":"Segment","x_axis_sort_asc":true,"metrics":[{"aggregate":"COUNT","column":{"advanced_data_type":null,"certification_details":null,"certified_by":null,"column_name":"Customer
+  ID","description":null,"expression":null,"filterable":true,"groupby":true,"id":804,"is_certified":false,"is_dttm":false,"python_date_format":null,"type":"DOUBLE
+  PRECISION","type_generic":0,"uuid":"969da76c-874f-480d-98bf-2255eef21349","verbose_name":null,"warning_markdown":null},"datasourceWarning":false,"expressionType":"SIMPLE","hasCustomLabel":false,"label":"COUNT(Customer
+  ID)","optionName":"metric_3i3d54pnpm2_ydjtrneify","sqlExpression":null}],"groupby":[],"adhoc_filters":[],"order_desc":true,"row_limit":10000,"truncate_metric":true,"show_empty_columns":true,"comparison_type":"values","annotation_layers":[],"forecastPeriods":10,"forecastInterval":0.8,"orientation":"vertical","x_axis_title":"Segment","x_axis_title_margin":30,"y_axis_title":"Customer
+  ID","y_axis_title_margin":50,"y_axis_title_position":"Left","sort_series_type":"sum","color_scheme":"blueToGreen","show_legend":true,"legendType":"scroll","legendOrientation":"top","x_axis_time_format":"smart_date","xAxisLabelInterval":"auto","y_axis_format":"SMART_NUMBER","y_axis_bounds":[null,null],"truncateXAxis":true,"rich_tooltip":true,"showTooltipTotal":true,"tooltipTimeFormat":"smart_date","extra_form_data":{},"dashboards":[14],"force":false,"result_format":"json","result_type":"full"},"result_format":"json","result_type":"full"}'
+cache_timeout: null
+uuid: 3e61d7a1-2052-4aed-87c8-f8f39b0c992e
+version: 1.0.0
+dataset_uuid: a9bb5c92-5b1f-4baf-b91d-0e43a48e2d9b
