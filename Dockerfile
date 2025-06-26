@@ -1,5 +1,6 @@
 FROM apache/superset:latest
 
+COPY superset_config.py /app/pythonpath/superset_config.py
 COPY dashboards/ /app/dashboards/
 COPY charts/ /app/charts/
 COPY datasets/ /app/datasets/
